@@ -1,21 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int factorization() {
+int main() {
     long long N;
     cin >> N;
 
-    while() {
-        cout << div(N) << endl
-    }
-
-    
-}
-
-int div(N) {
     for (long long i = 2; i * i <= N; i++) {
-        if (N % i == 0) {
-            return i;
+        while (N % i == 0) {
+            cout << i;
+            N = N / i;
         }
     }
+
+    cout << endl;
+    return 0;
 }
