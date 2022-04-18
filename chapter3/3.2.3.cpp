@@ -20,8 +20,8 @@ long long LCM(long long a, long long b) {
     else GCD = b;
 
     //2数の積を最大公約数で割る
-    //return A * B / GCD; こちらだと不正解
-    return (A / GCD) * B;
+    //return A * B / GCD; こちらだと不正解、オーバーフロー？
+    return (A / GCD) * B; //割ってからかけるのが良いみたい
 }
 
 int main() {
