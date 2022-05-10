@@ -18,7 +18,7 @@ int main() {
     double CBx = (X2 - X3), CBy = (Y2 - Y3);
 
     // 連立方程式から s, t 求める
-    // 分母 0 の場合は交点を持つ？ → 一直線上だが交点持たないパターンあり
+    // 分母 0 の場合は交点を持つ？ → 一直線上だが交点持たないパターンあり → コーナーケースは別で考える必要あり
     bool flag = false;
     if ((CAx * CBy - CAy * CBx) == 0 || (CBx * CAy - CBy * CAx) == 0) {
         flag = true;
