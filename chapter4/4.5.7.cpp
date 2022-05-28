@@ -11,7 +11,7 @@ int color[200009]; // 各頂点の色のリスト
 // 隣接するマスのうち最小番号を現在マスと異なる色で塗る
 // すでに塗られていれば何もしない
 void dfs(int pos) {
-    for (int i : G[pos]) { // エラー出ているが、AtCoderでは問題なく実行可能
+    for (int i : G[pos]) { // AtCoderでは問題なく実行可能なのでエラー表示消去
         if (color[i] == 0) {
             // color[pos]=1の時 2, color[pos]=2の時 1
             color[i] = 3 - color[pos];
